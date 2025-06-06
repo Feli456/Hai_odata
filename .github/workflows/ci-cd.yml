@@ -21,9 +21,7 @@ jobs:
     - name: Save Docker image as tar
       run: docker save inter_cloud-db1 > inter_cloud-web.tar
 
-    - name: Copy image to server (optional)
-      # Folosești SCP dacă rulezi Kubernetes în afara GitHub (ex: Minikube local)
-      # Acest pas poate fi omis dacă nu ai server extern.
+    # Pasul "Copy image to server" sters, pentru că nu avea run sau uses
 
     - name: Deploy to Kubernetes (optional)
       run: |
