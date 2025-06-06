@@ -16,10 +16,10 @@ jobs:
       uses: docker/setup-buildx-action@v3
 
     - name: Build Docker image
-      run: docker build -t inter_cloud-db1 .
+      run: docker build -t inter_cloud-db-1 .
 
     - name: Save Docker image as tar
-      run: docker save inter_cloud-db1 > inter_cloud-web.tar
+      run: docker save inter_cloud-db-1 > inter_cloud-web.tar
 
     # Pasul "Copy image to server" sters, pentru că nu avea run sau uses
 
